@@ -38,6 +38,9 @@
 //          .column-gap(@gap)
 //          .column-rule(@args)
 //          .column-width(@width)
+//          .break-inside(@mode)
+//          .break-after(@mode)
+//          .break-before(@mode)
 //      .gradient(@default,@start,@stop) *
 //          .linear-gradient-top(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
 //          .linear-gradient-left(@default,@color1,@stop1,@color2,@stop2,[@color3,@stop3,@color4,@stop4])*
@@ -219,6 +222,20 @@
     column-rule: @args;
 }
 
+.break-inside(@mode) {
+    -webkit-column-break-inside: @mode;
+    break-inside: @mode;
+}
+
+.break-before(@mode) {
+    -webkit-column-break-before: @mode;
+    break-before: @mode;
+}
+
+.break-after(@mode) {
+    -webkit-column-break-after: @mode;
+    break-after: @mode;
+}
 
 // Gradients
 
